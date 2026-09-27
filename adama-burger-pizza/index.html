@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adama Burger and Pizza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="promo" data-i18n="promo_text">🎉 Free delivery on your first order — use code ADAMA50</div>
+<div class="overlay" id="overlay"></div>
+
+<header>
+  <div class="nav">
+    <div class="brand" data-i18n="brand">ADAMA <span>BURGER &amp; PIZZA</span></div>
+    <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="menu-panel" id="menuPanel">
+  <button class="menu-close" id="menuClose">&times;</button>
+  <div style="clear:both"></div>
+  <a href="#top" data-i18n="m_home">Home</a>
+<link rel="stylesheet" href="style.css">
+  <a href="#about" data-i18n="m_about">
+      About Us
+    </a>
+
+<a href="#menu" data-i18n="m_menu">Menu / Order</a>
+  <a href="#delivery" data-i18n="m_delivery">Delivery</a>
+  <a href="#" data-i18n="m_rewards">Rewards<small data-i18n="m_soon">Coming soon</small></a>
+  <a href="#reviews" data-i18n="m_reviews">Reviews</a>
+  <a href="#contact" data-i18n="m_contact">Contact Us</a>
+  <a href="#" id="loginLink" data-i18n="m_login">Login</a>
+  <a href="#" id="signupLink" data-i18n="m_signup">Create Account</a>
+  <div class="lang-row">
+    <button data-lang="en" class="active">EN</button>
+    <button data-lang="am">AM</button>
+    <button data-lang="om">OM</button>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- ===================== HERO ===================== -->
+<!-- HERO CONTENT -->
+<section class="hero-content">
+  <h1 data-i18n="hero_h1">Best <em>Burgers</em> &amp; Pizza in Adama</h1>
+
+  <p data-i18n="hero_p">
+    Fresh, fast, and delivered hot to your door. Burgers, pizza, fast food and drinks made the way you like them.
+  </p>
+
+  <div class="btn-row">
+    <a href="#menu" class="btn" data-i18n="hero_cta">Order Now</a>
+    <a href="#menu" class="btn outline" data-i18n="hero_cta2">View Menu</a>
+  </div>
+</section>
+
+<!-- STANDALONE HERO IMAGE -->
+<section class="hero-image" aria-label="Adama Burger and Pizza">
+</section>
+
+<!-- ===================== FIXED-BACKGROUND RESTAURANT AREA ===================== -->
+<div class="restaurant-bg">
+  <section class="about-section" id="about">
+
+  <div class="about-container">
+
+    <div class="eyebrow">ABOUT US</div>
+
+    <h2>About Adama Burger & Pizza</h2>
+
+    <p>
+      Adama Burger & Pizza is a local food concept focused on fresh,
+      tasty burgers, pizza, fast food and drinks made for our customers
+      in Adama.
+    </p>
+
+    <p>
+      Our full story, team information and restaurant details
+      will be added here as the business grows.
+    </p>
+
+  </div>
+
+</section>
+
+  <section id="about">
+    <p class="eyebrow" data-i18n="pop_eye">FAN FAVORITES</p>
+    <h2 data-i18n="pop_h2">Popular Items</h2>
+    <div class="popular-grid" id="popularGrid"></div>
+  </section>
+
+  <section id="offer">
+    <div class="card offer-card">
+      <p class="eyebrow" data-i18n="offer_eye">SPECIAL OFFER</p>
+      <h2 style="color:var(--charcoal)" data-i18n="offer_h2">This week's deal</h2>
+      <p data-i18n="offer_text">Buy any large pizza and get a free drink. Valid on delivery orders over 300 ETB.</p>
+      <a href="#menu" class="btn" data-i18n="offer_btn">Claim Offer</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <p class="eyebrow" data-i18n="menu_eye">OUR MENU</p>
+    <h2 data-i18n="menu_h2">Pick your favorites</h2>
+    <div class="menu-category">
+
+  <h3 class="menu-category-title">Food</h3>
+  <div id="foodMenuGrid" class="menu-grid"></div>
+
+</div>
+
+<div class="menu-category">
+
+  <h3 class="menu-category-title">Drinks</h3>
+  <div id="drinkMenuGrid" class="menu-grid"></div>
+
+</div>
+  </section>
+  <!-- =========================================================
+     DELIVERY
+     ========================================================= -->
+
+<section id="delivery" class="delivery-section">
+
+  <div class="delivery-container">
+
+    <div class="delivery-heading">
+      <div class="eyebrow">DELIVERY</div>
+
+      <h2>Fast food, delivered to you</h2>
+
+      <p>
+        Enjoy your favorite burgers, pizza, fries and drinks
+        without leaving home. We deliver across Adama.
+      </p>
+    </div>
+
+
+    <div class="delivery-grid">
+
+      <!-- DELIVERY AREA -->
+      <div class="delivery-card">
+
+        <div class="delivery-icon">📍</div>
+
+        <h3>Delivery in Adama</h3>
+
+        <p>
+          We currently deliver within approximately
+          <strong>6 km of Adama city center.</strong>
+        </p>
+
+        <span class="delivery-note">
+          Delivery availability may depend on your exact location.
+        </span>
+
+      </div>
+
+
+      <!-- HOW TO ORDER -->
+      <div class="delivery-card">
+
+        <div class="delivery-icon">🛵</div>
+
+        <h3>How to order</h3>
+
+        <p>
+          Choose your favorite items from our menu,
+          add them to your order, and select delivery.
+        </p>
+
+        <ol class="delivery-steps">
+          <li>Choose your food</li>
+          <li>Place your order</li>
+          <li>Confirm your delivery location</li>
+          <li>Wait for your food to arrive</li>
+        </ol>
+
+      </div>
+
+
+      <!-- DELIVERY TIME -->
+      <div class="delivery-card">
+
+        <div class="delivery-icon">⏱️</div>
+
+        <h3>Estimated delivery</h3>
+
+        <p>
+          Most delivery orders are expected to arrive
+          within approximately:
+        </p>
+
+        <div class="delivery-time">
+          30–60 minutes
+        </div>
+
+        <span class="delivery-note">
+          Delivery time may vary during busy hours.
+        </span>
+
+      </div>
+
+
+      <!-- DELIVERY FEE -->
+      <div class="delivery-card">
+
+        <div class="delivery-icon">💰</div>
+
+        <h3>Delivery fee</h3>
+
+        <p>
+          Delivery fees may depend on your location
+          and order distance.
+        </p>
+
+        <div class="delivery-price">
+          Confirm at checkout
+        </div>
+
+        <span class="delivery-note">
+          Special delivery offers may apply.
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTACT / ORDER -->
+    <div class="delivery-bottom">
+
+      <div class="delivery-contact">
+
+        <div class="eyebrow">NEED HELP?</div>
+
+        <h3>Call us for delivery</h3>
+
+        <a href="tel:+251912345678">
+          +251 91 234 5678
+        </a>
+
+      </div>
+
+      <a href="#menu" class="btn delivery-order-btn">
+        Order Now
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <section id="reviews">
+    <p class="eyebrow" data-i18n="rev_eye">CUSTOMER REVIEWS</p>
+    <h2 data-i18n="rev_h2">What people are saying</h2>
+    <div class="review-grid" id="reviewGrid"></div>
+
+    <div class="card review-form">
+      <h3 style="font-size:16px;margin-bottom:14px;" data-i18n="rev_form_title">Leave a review</h3>
+      <label data-i18n="rev_form_name">Your name</label>
+      <input id="revName" type="text" placeholder="e.g. Selam T.">
+      <label data-i18n="rev_form_rating">Rating</label>
+      <select id="revRating">
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+      </select>
+      <label data-i18n="rev_form_comment">Your review</label>
+      <textarea id="revComment" rows="3" placeholder="Tell us about your order..."></textarea>
+      <button class="btn" id="submitReview" data-i18n="rev_form_submit">Submit Review</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+
+  <div class="contact-container">
+
+    <!-- LOCATION -->
+    <div class="contact-column location-column">
+
+      <p class="eyebrow" data-i18n="visit_eye">LOCATION</p>
+
+      <h2 data-i18n="visit_h2">Find Us</h2>
+
+      <p class="contact-address" data-i18n="v_addr">
+        Bole Road, near City Square, Adama, Ethiopia
+      </p>
+
+      <h4 data-i18n="v_map_title">Find us on the map</h4>
+
+      <div class="map-placeholder" data-i18n="v_map">
+        Map preview — Adama city area
+      </div>
+
+      <a href="#" class="map-button" data-i18n="v_map_btn">
+        Open Map
+      </a>
+
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="contact-column">
+
+      <p class="eyebrow" data-i18n="contact_eye">CONTACT US</p>
+
+      <h2 data-i18n="contact_h2">Get in touch</h2>
+
+      <div class="contact-details">
+
+        <div class="contact-item">
+          <span class="contact-label" data-i18n="v_phone_label">
+            Phone
+          </span>
+
+          <a href="tel:+251912345678">
+            +251 91 234 5678
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label" data-i18n="v_email_label">
+            Email
+          </span>
+
+          <a href="mailto:hello@adamaburgerpizza.com">
+            hello@adamaburgerpizza.com
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="social-area">
+
+        <h4 data-i18n="social_title">Follow us</h4>
+
+        <div class="social-links">
+
+          <a href="#" aria-label="Facebook">
+            Facebook
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            Instagram
+          </a>
+
+          <a href="#" aria-label="TikTok">
+            TikTok
+          </a>
+
+          <a href="#" aria-label="Telegram">
+            Telegram
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- OPENING HOURS -->
+    <div class="contact-column hours-column">
+
+      <p class="eyebrow" data-i18n="hours_eye">OPENING HOURS</p>
+
+      <h2 data-i18n="v_hours_t">Opening Hours</h2>
+
+      <div class="hours-box">
+
+        <div class="hours-row">
+          <span data-i18n="hours_everyday">Every day</span>
+          <strong>9:00 AM – 11:00 PM</strong>
+        </div>
+
+      </div>
+
+      <div class="delivery-info">
+
+        <h4 data-i18n="delivery_title">
+          Delivery
+        </h4>
+
+        <p data-i18n="v_delivery">
+          Delivery zone: within 6 km of city center
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+</div><!-- /.restaurant-bg -->
+
+<footer>
+  <p class="footer-brand">ADAMA BURGER &amp; PIZZA</p>
+  <p class="copyright">© 2026 Adama Burger and Pizza</p>
+  <p class="footer-tagline">Fresh food. Fast delivery. Made for Adama.</p>
+</footer>
+
+<a href="#menu" class="btn sticky-order" data-i18n="order_float">Order Now</a>
+
+<div class="modal-bg" id="loginModal">
+  <div class="modal">
+    <button class="close-x" id="modalClose">&times;</button>
+    <div class="lang-row" style="margin-top:0;">
+      <button id="tabLogin" class="active" data-tab="login">Login</button>
+      <button id="tabSignup" data-tab="signup">Create Account</button>
+    </div>
+    <h3 id="modalTitle" data-i18n="login_title">Log in</h3>
+    <div id="signupFields" style="display:none;">
+      <input type="text" placeholder="Full name" id="suName">
+    </div>
+    <input type="text" placeholder="Phone number" id="authPhone">
+    <input type="password" placeholder="Password" id="authPass">
+    <button class="btn" id="modalSubmit" data-i18n="login_btn">Log In</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
